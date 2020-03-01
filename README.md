@@ -5,6 +5,8 @@
 
 SQL脚本在 sqlscripts 文件夹内,数据库采用MYSQL数据库
 
+walk类库，当前使用的类库并不是最新版本。该UI类库，在更新版本时有可能并不兼容。
+
 # GUI walk
 https://github.com/lxn/walk
 
