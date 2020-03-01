@@ -7,13 +7,16 @@
 ![image](https://raw.githubusercontent.com/thomasbrook/Configuration-tools/master/img/1.png)
 
 # Configuration-tools
-基于go语言，UI类库walk，实现windows 桌面版配置工具
+基于go语言，UI类库walk，实现windows 桌面版配置工具。
+
+代码层级并没有进行良好的设计，实现比较丑陋，请勿喷。
 
 数据库连接、XML文件链接都配置在 Configuration-tools/model/dataType.go 文件中
 
 SQL脚本在 sqlscripts 文件夹内,数据库采用MYSQL数据库
 
 walk类库，当前使用的类库并不是最新版本。该UI类库，在更新版本时有可能并不兼容。
+
 
 ![image](https://raw.githubusercontent.com/thomasbrook/Configuration-tools/master/img/5.png)
 
