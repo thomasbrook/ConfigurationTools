@@ -1,7 +1,10 @@
-img/4.png
-img/3.png
-img/2.png
-img/1.png
+https://raw.githubusercontent.com/thomasbrook/Configuration-tools/master/img/4.png
+
+https://raw.githubusercontent.com/thomasbrook/Configuration-tools/master/img/3.png
+
+https://raw.githubusercontent.com/thomasbrook/Configuration-tools/master/img/2.png
+
+https://raw.githubusercontent.com/thomasbrook/Configuration-tools/master/img/1.png
 
 # Configuration-tools
 基于go语言，UI类库walk，实现windows 桌面版配置工具
