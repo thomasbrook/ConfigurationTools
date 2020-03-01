@@ -2,6 +2,7 @@
 基于go语言，UI类库walk，实现windows 桌面版配置工具
 
 数据库连接、XML文件链接都配置在 Configuration-tools/model/dataType.go 文件中
+
 SQL脚本在 sqlscripts 文件夹内,数据库采用MYSQL数据库
 
 # GUI walk
