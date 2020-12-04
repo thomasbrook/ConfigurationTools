@@ -54,11 +54,11 @@ func NewEditPanel(parent walk.Container, vt *model.VehicleType, mainWin *TabMain
 									},
 								},
 								TableView{
-									AssignTo:              &vtec.vehicleTypeCanTv,
-									AlternatingRowBGColor: walk.RGB(239, 239, 239),
-									CheckBoxes:            false,
-									ColumnsOrderable:      true,
-									MultiSelection:        true,
+									AssignTo: &vtec.vehicleTypeCanTv,
+									//AlternatingRowBGColor: walk.RGB(239, 239, 239),
+									CheckBoxes:       false,
+									ColumnsOrderable: true,
+									MultiSelection:   true,
 									Columns: []TableViewColumn{
 										{Title: "#", Width: 35},
 										{Title: "编号", Width: 50},

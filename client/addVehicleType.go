@@ -52,11 +52,11 @@ func NewAddPanel(parent walk.Container, vt *model.VehicleType, mainWin *TabMainW
 								},
 							},
 							TableView{
-								AssignTo:              &vtec.searchCanTv,
-								AlternatingRowBGColor: walk.RGB(239, 239, 239),
-								CheckBoxes:            true,
-								ColumnsOrderable:      true,
-								MultiSelection:        false,
+								AssignTo: &vtec.searchCanTv,
+								//AlternatingRowBGColor: walk.RGB(239, 239, 239),
+								CheckBoxes:       true,
+								ColumnsOrderable: true,
+								MultiSelection:   false,
 								Columns: []TableViewColumn{
 									{Title: "#", Width: 50},
 									{Title: "中文名称"},
@@ -117,11 +117,11 @@ func NewAddPanel(parent walk.Container, vt *model.VehicleType, mainWin *TabMainW
 								},
 							},
 							TableView{
-								AssignTo:              &vtec.targetCanTv,
-								AlternatingRowBGColor: walk.RGB(239, 239, 239),
-								CheckBoxes:            true,
-								ColumnsOrderable:      true,
-								MultiSelection:        true,
+								AssignTo: &vtec.targetCanTv,
+								//AlternatingRowBGColor: walk.RGB(239, 239, 239),
+								CheckBoxes:       true,
+								ColumnsOrderable: true,
+								MultiSelection:   true,
 								Columns: []TableViewColumn{
 									{Title: "#", Width: 50},
 									{Title: "编号", Width: 50},
