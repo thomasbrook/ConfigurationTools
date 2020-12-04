@@ -10,7 +10,14 @@ https://cloud.tencent.com/developer/article/1422483
 
 #### 四、隐藏cmd窗口
 go build -ldflags="-H windowsgui"
-#### 五、主要功能
+
+#### 五、如何打包
+将img/*、.ini(可无，会自动生成)、config.json、favicon.ico、help.html、logo.png、exe执行文件（第四步生成的exe文件）放置于自定义文件夹内。
+![image](https://raw.githubusercontent.com/thomasbrook/ConfigurationTools/master-v2/img/demo16.png)
+将这些文件添加到rar包内，选择可执行文件。
+具体打包方式请百度。
+
+#### 六、主要功能
 ###### #1 首页
 ![image](https://raw.githubusercontent.com/thomasbrook/ConfigurationTools/master-v2/img/demo1.png)
 ###### #2 批量编辑CAN信息
