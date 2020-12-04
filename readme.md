@@ -1,3 +1,6 @@
+
+###### 环境配置，请切换到master分支，查看 README
+
 #### 一、GUI walk
 https://github.com/lxn/walk
 
