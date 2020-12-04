@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>帮助文档</title>
+</head>
+<body style="padding: 10px 50px;">
+<h3>农机CAN管理配置工具 - 帮助文档</h3>
+<h4>一、关于该工具</h4>
+<p>主要用于CAN参数的配置管理。</p>
+<p>一般情况下，针对多个客户，硬件设备会使用同一套协议进行实现，
+    但客户会有个性化的要求，比如只显示部分CAN字段。</p>
+<p>另外，由于信息不一致及领域知识有限，大数据标识的CAN信息
+    会与真实情况有出入，就需要本地化处理，比如单位、命名等信息。</p>
+<h4>二、相关配置文件</h4>
+<h5>1、config.json，配置文件，位于安装根目录。</h5>
+<p>database：数据库连接</p>
+<p>canConfig：大数据CAN字段XML</p>
+<p>canGroup: CAN分组归类，编码与业务数据库保持一致</p>
+<p>appsettings：工具使用的key</p>
+<h5>2、conf.ini，工具持久化配置项，勿动</h5>
+<h4>三、关键配置项</h4>
+<h5>1、数据类型</h5>
+<p>#1 日期时间</p>
+<p>#2 数字枚举，比如 0-不报警,1-报警,2-错误,3-未定义 </p>
+<p>#3 数据，将与【公式转换】、【小数位】进行统一处理</p>
+<p>#5 文本枚举，将文本转换为数字，主要为了数值分析。比如 0-电钥匙关闭,1-电钥匙打开</p>
+<p>#6 文本多枚举，将多个文本，转换为多个数字。比如 separator-|,EG03100003117010001-冷却液高温报警,EG03100003117010101-发动机高温报警</p>
+<p>#7 多字段组合多枚举值，将多个字段进行组合展示。比如 4020,4021,4438,4439，目前只针对故障码，SPN、FMI、CM、OC。</p>
+<p>#4 其他，默认显示原始值</p>
+<p><img src="img/demo12.png"></p>
+<h5>2、转换公式</h5>
+<p>此字段只针对数据类型的数据进行公式转换处理，比如大数据返回的总时长为3600秒，要展示为小时，需要设置为x/3600。此时，数据类型需要设置为 #3。</p>
+<h5>3、小数位数</h5>
+<p>在 #3 的情况下，参与数据转换处理。</p>
+<h5>4、是否为可分析项</h5>
+<p>是否可用来进行数据分析，以对车辆进行问题排查。一般情况下，是具有一定意义的数据或状态值，多指标对比来分析问题。</p>
+<p>0、不可分析；1、可分析；2、默认分析项。</p>
+<h4>四、与大数据接口交互说明</h4>
+<p>所有的CAN字段定义，在大数据平台，都有一份xml名录。每一个CAN字段，都分配一个唯一的ID、字段英文名。</p>
+<p>查询某台车的CAN历史，就是以终端编号查询，在本地根据ID进行解析过滤。</p>
+<p>或者以 终端编号 + 某些字段名，按需查询，并在在本地进行解析过滤。</p>
+<h4>五、相关界面</h4>
+<h5>首页</h5>
+<p><img src="img/demo1.png"></p>
+<h5>某车系下的CAN管理界面，可导出CSV或者复制到剪贴板</h5>
+<p><img src="img/demo2.png"></p>
+<h5>CAN管理界面中，双击行，可进行编辑</h5>
+<p><img src="img/demo3.png"></p>
+<h5>创建车系</h5>
+<p><img src="img/demo4.png"></p>
+<h5>编辑车系，可编辑分组信息以及设置是否为智能机等操作</h5>
+<p><img src="img/demo5.png"></p>
+<h5>批量编辑CAN信息</h5>
+<p><img src="img/demo6.png"></p>
+<h5>从大数据导入，根据can关键词或者唯一编码搜索添加</h5>
+<p><img src="img/demo7.png"></p>
+<h5>从其他车型导入配置信息</h5>
+<p><img src="img/demo8.png"></p>
+<h5>从剪贴板，导入配置信息</h5>
+<p><img src="img/demo9.png"></p>
+<h5>从CSV文件导入</h5>
+<p><img src="img/demo10.png"></p>
+<h5>导出CAN信息</h5>
+<p>批量导出，需要选择文本文件，文件内容为多个设备编号，换行显示。输出文件包括两部分，一部分是统计文件，一部分是数据文件。</p>
+<p><img src="img/demo13.png"></p>
+</body>
+</html>

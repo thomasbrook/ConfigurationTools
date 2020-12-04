@@ -1,0 +1,69 @@
+{
+  "connectionStrings": [
+    {
+      "name": "农机天眼",
+      "code": 1,
+      "mode": "test",
+      "connectionString": "root:l520m6ti@tcp(192.168.11.102:3306)/agfpiddb?charset=utf8"
+    },
+    {
+      "name": "农机天眼",
+      "code": 2,
+      "mode": "production",
+      "connectionString": "aguser:z3ZelaJc@tcp(172.16.1.27:3306)/agfpiddb?charset=utf8"
+    }
+  ],
+  "canConfigXml": {
+    "name": "CAN字段定义",
+    "test": "http://192.168.11.8/config.xml",
+    "production": "http://172.16.1.245:8000/config.xml"
+  },
+  "appSettings": [
+    {
+      "Key": "getHistoryInfo2",
+      "test": "http://192.168.11.8:30000/spring-cloud-server-nrmv/nrmv/getHistoryInfo2",
+      "production": "http://192.168.11.8:30000/spring-cloud-server-nrmv/nrmv/getHistoryInfo2"
+    },
+    {
+      "Key": "getLastestInfos",
+      "test": "http://172.16.1.245:8086/basicInfo/getLastestInfos",
+      "production": "http://172.16.1.245:8086/basicInfo/getLastestInfos"
+    },
+    {
+      "Key": "CmdIp",
+      "test": "http://192.168.11.126:8081",
+      "production": "http://192.168.11.126:8081"
+    },
+    {
+      "Key": "ListAddressByCoordinate",
+      "test": "http://qz.bcnyyun.com/FaultAlarmRawInfo/ListAddressByCoordinate",
+      "production": "http://qz.bcnyyun.com/FaultAlarmRawInfo/ListAddressByCoordinate"
+    }
+  ],
+  "canGroup": [
+    {
+      "Name": "常规信息",
+      "Code": 0
+    },
+    {
+      "Name": "CAN信息",
+      "Code": 1
+    },
+    {
+      "Name": "指令下发",
+      "Code": 2
+    },
+    {
+      "Name": "国四监控信息",
+      "Code": 3
+    },
+    {
+      "Name": "诊断信息",
+      "Code": 4
+    },
+    {
+      "Name": "设备信息",
+      "Code": 5
+    }
+  ]
+}
