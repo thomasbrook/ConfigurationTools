@@ -12,14 +12,7 @@ https://cloud.tencent.com/developer/article/1422483
 go build -ldflags="-H windowsgui"
 
 #### 五、如何打包
-将
-img/*、
-.ini(可无，会自动生成)、
-config.json、favicon.ico、
-help.html、
-logo.png、
-exe执行文件（第四步生成的exe文件）
-放置于自定义文件夹内。
+将img/*、.ini(可无，会自动生成)、config.json、favicon.ico、help.html、logo.png、exe执行文件（第四步生成的exe文件）放置于自定义文件夹内。
 
 ![image](https://raw.githubusercontent.com/thomasbrook/ConfigurationTools/master-v2/img/demo16.png)
 
