@@ -1,5 +1,5 @@
 
-###### 环境配置，请切换到master分支，查看 README
+###### 环境配置，请切换到[master分支](https://github.com/thomasbrook/ConfigurationTools/tree/master)，查看 README
 
 #### 一、GUI walk
 https://github.com/lxn/walk
